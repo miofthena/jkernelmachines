@@ -1,4 +1,5 @@
 apply plugin: 'java'
+apply plugin: 'maven-publish'
 apply plugin: 'idea'
 
 sourceCompatibility = '1.7'
@@ -47,4 +48,13 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
 artifacts {
     archives sourcesJar
     archives javadocJar
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            artifacts = [sourcesJar, javadocJar]
+        }
+    }
 }
