@@ -18,6 +18,10 @@ sourceSets {
             srcDir 'src'
         }
 
+        resources {
+            srcDir 'resources'
+        }
+
     }
     test {
         java {
