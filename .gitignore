@@ -6,3 +6,12 @@ test/build/
 junit-report/
 doc/
 
+.gradle/
+build/
+out/
+
+*.iml
+*.ipr
+*.iws
+.idea/
+
