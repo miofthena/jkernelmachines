@@ -58,7 +58,7 @@ publishing {
     publications {
         mavenJava(MavenPublication) {
             from components.java
-            artifacts = [sourcesJar, javadocJar]
+            artifacts = [jar, sourcesJar, javadocJar]
         }
     }
 }
